@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotta Vähe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Vasemman laidan kuva -->
+    <div class="left-fixed">
+        <img src="paikka-kuvalle.jpg" alt="Profiilikuva">
+    </div>
+
+    <!-- Oikean puolen sisältö -->
+    <div class="main-content">
+        <!-- Otsikko -->
+        <h1>Lotta Vähe</h1>
+
+        <!-- Ensimmäinen osio: teksti -->
+        <div class="right-text section">
+            <!-- Jätä tähän tilaa omalle sisällöllesi -->
+            <h2>Otsikko tähän</h2>
+            <p>Kirjoita oma tekstisi tähän osioon. Tämä on ensimmäinen tekstiosio.</p>
+        </div>
+
+        <!-- Väliä -->
+        <div class="empty-space"></div>
+
+        <!-- Toinen osio: kuva ja sen alla teksti -->
+        <div class="second-section section">
+            <img src="toinen-kuva.jpg" alt="Toinen kuva">
+            <div class="text-below">
+                <!-- Jätä tähän tilaa omalle sisällöllesi -->
+                <h2>Toinen otsikko</h2>
+                <p>Kirjoita tähän toisen osion teksti.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alareunan kiinteät linkit -->
+    <div class="footer">
+        <a href="aikajana.html">Aikajana</a>
+        <a href="työelämäni.html">Työelämäni</a>
+    </div>
+
+    <!-- Scroll animaatioiden aktivointi -->
+    <script>
+        const sections = document.querySelectorAll('.section');
+
+        function checkSections() {
+            const triggerBottom = window.innerHeight * 0.8;
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                if (sectionTop < triggerBottom) {
+                    section.classList.add('visible');
+                } else {
+                    section.classList.remove('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', checkSections);
+        window.addEventListener('load', checkSections);
+    </script>
+
+</body>
+
+</html>
+
+
