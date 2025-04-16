@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff; /* Vaalea sininen tausta */
+    background-color: #c6def3; /* Vaalea sininen tausta */
     color: #001f3f; /* Tumma sininen teksti */
     scroll-behavior: smooth;
     display: flex;
@@ -11,13 +11,19 @@ body {
 /* Tekstit */
 p { 
     text-align: center;
-    font-size: 18px;
-    color: #000000;
+    font-size: 24px;
+    color: #001f3f;
     width: 70%;
     margin: 0 auto;
     line-height: 1.7;
 }
 
+/* Isommalla tekstillä olevat */
+.isoteksti{
+    font-size: 29px;
+    color: #001f3f;
+    font-weight: bold;
+}
 /* Vasemman laidan kuva pysyvästi paikallaan */
 .left-fixed {
     position: fixed;
@@ -41,6 +47,8 @@ p {
 /* Eka tekstiosio sisältöä varten */
 .main-content {
     text-align: center;
+    margin-left: 30%;
+    width: 70%;
     padding: 50px;
 }
 
