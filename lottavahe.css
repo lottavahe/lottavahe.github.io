@@ -8,6 +8,15 @@ body {
     scroll-behavior: smooth;
     display: flex;
 }
+/* Tekstit */
+p { 
+    text-align: center;
+    font-size: 18px;
+    color: #000000;
+    width: 70%;
+    margin: 0 auto;
+    line-height: 1.7;
+}
 
 /* Vasemman laidan kuva pysyvästi paikallaan */
 .left-fixed {
@@ -29,10 +38,9 @@ body {
     height: auto;
 }
 
-/* Oikea puoli sisältöä varten */
+/* Eka tekstiosio sisältöä varten */
 .main-content {
-    margin-left: 30%;
-    width: 70%;
+    text-align: center;
     padding: 50px;
 }
 
@@ -51,11 +59,6 @@ h2 {
     margin-bottom: 20px;
 }
 
-p {
-    font-size: 18px;
-    color: #000000;
-    line-height: 1.6;
-}
 
 /* Teksti oikealla */
 .right-text {
@@ -79,7 +82,7 @@ p {
 
 .second-section .text-below {
     text-align: center;
-    width: 100%;
+    width: 70%;
 }
 
 /* Navigointipainikkeet alareunassa, aina näkyvissä */
