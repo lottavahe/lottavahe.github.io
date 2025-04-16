@@ -57,7 +57,7 @@ p {
 /* Otsikot ja fonttikoot */
 h1 {
     font-family: "Century Gothic", Arial, sans-serif;
-    font-size: 48px;
+    font-size: 50px;
     color: #001f3f;
     margin-bottom: 20px;
     text-align: center;
@@ -66,7 +66,7 @@ h1 {
 
 h2 {
     font-family: "Century Gothic", Arial, sans-serif;
-    font-size: 32px;
+    font-size: 50px;
     color: #001f3f;
     text-align: center;
     margin-bottom: 20px;
