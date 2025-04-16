@@ -50,7 +50,7 @@ p {
 .main-content {
     text-align: center;
     margin-left: 30%;
-    width: 70%;
+    width: 60%;
     padding: 50px;
 }
 
@@ -90,14 +90,14 @@ h2 {
 }
 
 .second-section img {
-    max-width: 80%;
+    max-width: 60%;
     height: auto;
     margin-bottom: 20px;
 }
 
 .second-section .text-below {
     text-align: center;
-    width: 70%;
+    width: 60%;
 }
 
 /* Navigointipainikkeet alareunassa, aina näkyvissä */
@@ -108,7 +108,7 @@ h2 {
     position: fixed;
     bottom: 0;
     left: 30%;
-    width: 70%;
+    width: 60%;
     border-top: 2px solid #001f3f;
 }
 
