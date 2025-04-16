@@ -12,7 +12,7 @@ body {
 p { 
     font-family: "Century Gothic", Arial, sans-serif;
     text-align: center;
-    font-size: 24px;
+    font-size: 29px;
     color: #001f3f;
     width: 70%;
     margin: 0 auto;
@@ -22,7 +22,7 @@ p {
 /* Isommalla tekstillä olevat */
 .isoteksti{
     font-family: "Century Gothic", Arial, sans-serif;
-    font-size: 29px;
+    font-size: 31px;
     color: #001f3f;
     font-weight: bold;
 }
