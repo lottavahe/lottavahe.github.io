@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'DM Sans', sans-serif;
     background-color: #c6def3; /* Vaalea sininen tausta */
     color: #001f3f; /* Tumma sininen teksti */
     scroll-behavior: smooth;
@@ -10,7 +10,7 @@ body {
 }
 /* Tekstit */
 p { 
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'DM Sans', sans-serif;
     text-align: center;
     font-size: 29px;
     color: #001f3f;
@@ -21,10 +21,9 @@ p {
 
 /* Isommalla tekstillä olevat */
 .isoteksti{
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 31px;
     color: #001f3f;
-    font-weight: bold;
+    font-weight: 500;
 }
 /* Vasemman laidan kuva pysyvästi paikallaan */
 .left-fixed {
@@ -56,21 +55,19 @@ p {
 
 /* Otsikot ja fonttikoot */
 h1 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 50px;
     color: #001f3f;
     margin-bottom: 20px;
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 h2 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 50px;
     color: #001f3f;
     text-align: center;
     margin-bottom: 20px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 
@@ -81,7 +78,6 @@ h2 {
 
 /* Toinen osio: kuva keskellä ja teksti sen alla */
 .second-section {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: center;
     display: flex;
     flex-direction: column;
