@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: #c6def3; /* Vaalea sininen tausta */
     color: #001f3f; /* Tumma sininen teksti */
     scroll-behavior: smooth;
@@ -10,6 +10,7 @@ body {
 }
 /* Tekstit */
 p { 
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-size: 24px;
     color: #001f3f;
@@ -20,6 +21,7 @@ p {
 
 /* Isommalla tekstillä olevat */
 .isoteksti{
+    font-family: 'Montserrat', sans-serif;
     font-size: 29px;
     color: #001f3f;
     font-weight: bold;
@@ -54,17 +56,21 @@ p {
 
 /* Otsikot ja fonttikoot */
 h1 {
+    font-family: 'Montserrat', sans-serif;
     font-size: 48px;
     color: #001f3f;
     margin-bottom: 20px;
     text-align: center;
+    font-weight: bold;
 }
 
 h2 {
+    font-family: 'Montserrat', sans-serif;
     font-size: 32px;
     color: #001f3f;
     text-align: center;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 
@@ -75,6 +81,7 @@ h2 {
 
 /* Toinen osio: kuva keskellä ja teksti sen alla */
 .second-section {
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     display: flex;
     flex-direction: column;
