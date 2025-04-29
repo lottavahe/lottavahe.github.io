@@ -32,7 +32,7 @@ p {
     left: 0;
     width: 40%;
     height: 100vh;
-    background-color: #ffffff;
+    background-color: #919191;
     text-align: center;
     display: flex;
     align-items: center;
@@ -98,7 +98,7 @@ h2 {
 
 /* Navigointipainikkeet alareunassa, aina näkyvissä */
 .footer {
-    background-color: #0c0c0c49;
+    background-color: #0c0c0c98;
     text-align: center;
     padding: 15px 0;
     position: fixed;
