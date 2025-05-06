@@ -7,25 +7,54 @@
     <title>Työelämäni – CV</title>
     <link rel="stylesheet" href="lottavahe.css">
     <style>
-        /* Kuvan koon hienosäätö (noudattaa teemaa, ei muuta värejä) */
+        /* Poistetaan marginaali vasemmalta, keskitetään kaikki */
+        .main-content {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 1200px;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
         .cv-kuva img {
             width: 95%;
-            max-width: 1200px;
+            max-width: 1000px;
             height: auto;
             border-radius: 10px;
+        }
+
+        /* Alareunan kiinteä linkkipalkki koko sivun levyinen ja keskitetty */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #0c0c0c98;
+            border-top: 2px solid #000000;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: #ffffff;
+            margin: 0 20px;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #ffffff;
         }
     </style>
 </head>
 
 <body>
-    <!-- Oikean puolen sisältö -->
     <div class="main-content">
         <h1>CV</h1>
 
-        <!-- Väli ennen näkyviin tuloa -->
         <div class="empty-space"></div>
 
-        <!-- CV-kuva, ilmestyy scrollatessa -->
         <div class="cv-kuva section">
             <img src="KUVAT/cv.jpg" alt="CV-kuva">
         </div>
@@ -33,13 +62,11 @@
         <div class="empty-space"></div>
     </div>
 
-    <!-- Alareunan kiinteät linkit (käyttää suoraan CSS:ää, ei muutoksia) -->
     <div class="footer">
         <a href="index.html">Etusivu</a>
         <a href="aikajana.html">Aikajana</a>
     </div>
 
-    <!-- Scroll-animaatiot -->
     <script>
         const sections = document.querySelectorAll('.section');
 
