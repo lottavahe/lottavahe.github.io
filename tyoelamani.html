@@ -1,1 +1,73 @@
-tähän haluan netti sivun tyoelamani 
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Työelämäni – CV</title>
+    <link rel="stylesheet" href="lottavahe.css">
+    <style>
+        /* Vain tämä sivu: footer koko leveydelle ja keskitetty sisältö */
+        .footer {
+            left: 0;
+            width: 100%;
+        }
+
+        .footer a {
+            margin: 0 20px;
+        }
+
+        /* CV-kuva keskitettynä */
+        .cv-kuva {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .cv-kuva img {
+            width: 90%;
+            max-width: 1000px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- CV-kuva isona keskellä -->
+    <div class="main-content">
+        <h1>CV</h1>
+
+        <div class="cv-kuva section">
+            <img src="KUVAT/cv.jpg" alt="CV-kuva">
+        </div>
+
+        <div class="empty-space"></div>
+    </div>
+
+    <!-- Alareunan linkkipalkki -->
+    <div class="footer">
+        <a href="index.html">Etusivu</a>
+        <a href="aikajana.html">Aikajana</a>
+    </div>
+
+    <!-- Scroll-animaatio -->
+    <script>
+        const sections = document.querySelectorAll('.section');
+
+        function checkSections() {
+            const triggerBottom = window.innerHeight * 0.8;
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                if (sectionTop < triggerBottom) {
+                    section.classList.add('visible');
+                } else {
+                    section.classList.remove('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', checkSections);
+        window.addEventListener('load', checkSections);
+    </script>
+</body>
+
+</html>
