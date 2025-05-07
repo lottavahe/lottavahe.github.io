@@ -2,35 +2,142 @@
 <html lang="fi">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Työelämäni – CV</title>
-    <link rel="stylesheet" href="lottavahe.css">
-    <style>
-        /* Vain tämä sivu: footer koko leveydelle ja keskitetty sisältö */
-        .footer {
-            left: 0;
-            width: 100%;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aikajana</title>
+  <link rel="stylesheet" href="lottavahe.css" />
+  <style>
+    body {
+      background-color: #242525;
+      color: white;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      margin: 0;
+      padding: 0;
+    }
 
-        .footer a {
-            margin: 0 20px;
-        }
+    .main-content {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 80px 20px;
+      text-align: center;
+    }
 
-        /*kuva keskitettynä */
-        kuva {
-            text-align: center;
-            margin-top: 100px;
-        }
+    .timeline-container {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      margin-top: 100px;
+    }
 
-    </style>
+    .timeline-line {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: #ffffff;
+      z-index: 1;
+    }
+
+    .timeline-item {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+      text-align: center;
+    }
+
+    .timeline-item img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 3px solid #ffffff;
+      background-color: #242525;
+    }
+
+    .timeline-item p {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #ffffff;
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #0c0c0c98;
+      border-top: 2px solid #000000;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    .footer a {
+      text-decoration: none;
+      color: #ffffff;
+      margin: 0 20px;
+      font-size: 18px;
+    }
+
+    .footer a:hover {
+      color: #ffffff;
+    }
+  </style>
 </head>
-<body>
-    <div class="footer">
-        <a href="index.html">Etusivu</a>
-        <a href="tyoelamani.html">Työelämäni</a>
-    </div>
-</body>
 
+<body>
+  <div class="main-content">
+    <h1>Aikajana</h1>
+
+    <div class="timeline-container section">
+      <div class="timeline-line"></div>
+
+      <div class="timeline-item" style="left: 10%;">
+        <img src="KUVAT/kuva1.jpg" alt="Pysäkki 1" />
+        <p>Armeija</p>
+      </div>
+
+      <div class="timeline-item" style="left: 35%;">
+        <img src="KUVAT/kuva2.jpg" alt="Pysäkki 2" />
+        <p>Judo</p>
+      </div>
+
+      <div class="timeline-item" style="left: 60%;">
+        <img src="KUVAT/kuva3.jpg" alt="Pysäkki 3" />
+        <p>Työkokemus</p>
+      </div>
+
+      <div class="timeline-item" style="left: 85%;">
+        <img src="KUVAT/kuva4.jpg" alt="Pysäkki 4" />
+        <p>Opinnot</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <a href="index.html">Etusivu</a>
+    <a href="tyoelamani.html">Työelämäni</a>
+  </div>
+
+  <script>
+    const sections = document.querySelectorAll('.section');
+
+    function checkSections() {
+      const triggerBottom = window.innerHeight * 0.8;
+      sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        if (sectionTop < triggerBottom) {
+          section.classList.add('visible');
+        } else {
+          section.classList.remove('visible');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', checkSections);
+    window.addEventListener('load', checkSections);
+  </script>
+</body>
 
 </html>

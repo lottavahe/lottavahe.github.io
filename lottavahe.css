@@ -12,7 +12,7 @@ body {
 p { 
     font-family: Georgia, "Times New Roman", Times, serif;
     text-align: center;
-    font-size: 29px;
+    font-size: 19px;
     color: #ffffff;
     width: 70%;
     margin: 0 auto;
@@ -21,7 +21,7 @@ p {
 
 /* Isommalla tekstillä olevat */
 .isoteksti{
-    font-size: 31px;
+    font-size: 22px;
     color: #ffffff;
     font-weight: 500;
 }
@@ -55,7 +55,7 @@ p {
 
 /* Otsikot ja fonttikoot */
 h1 {
-    font-size: 50px;
+    font-size: 30px;
     color: #ffffff;
     margin-bottom: 20px;
     text-align: center;
@@ -63,7 +63,7 @@ h1 {
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 30px;
     color: #ffffff;
     text-align: center;
     margin-bottom: 20px;
